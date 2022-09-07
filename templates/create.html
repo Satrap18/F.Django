@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<h3>Add Book</h3>
+	<form method="post" action="">
+		{% csrf_token %}
+		{{froms.as_p}}
+		<input type="submit" value="create">
+	</form>
+{% endblock %}
